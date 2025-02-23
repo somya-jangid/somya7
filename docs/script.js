@@ -1,7 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize image slider
-    // Initialize parallax effects
-    // Initialize lightbox for gallery
-    // Initialize testimonials carousel
-    // Add event listeners for interactive elements
+    const sendButton = document.querySelector('.send-button');
+    const inputField = document.querySelector('.input-field input');
+
+    sendButton.addEventListener('click', function() {
+        const messageText = inputField.value;
+        if (messageText.trim() !== '') {
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('message', 'user-message');
+            userMessage.innerHTML = `<p>${messageText}</p>`;
+            document.querySelector('.chat-window').appendChild(userMessage);
+            inputField.value = '';
+        }
+    });
+
+    inputField.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            sendButton.click();
+        }
+    });
 });
