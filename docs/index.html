@@ -3,76 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Management</title>
+    <title>ChatGPT-like Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="logo">Hotel Logo</div>
-        <nav class="nav">
+        <div class="logo">AI Logo</div>
+        <nav class="navigation">
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#rooms">Rooms & Suites</a></li>
-                <li><a href="#amenities">Amenities</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="user-profile">
+            <img src="https://example.com/user-avatar.png" alt="User Avatar">
+            <span>User Name</span>
+        </div>
     </header>
-    <section class="hero">
-        <div class="hero-slider">
-            <!-- Image slider content -->
-        </div>
-        <div class="hero-overlay">
-            <h1>Welcome to Our Hotel</h1>
-            <button class="book-now">Book Now</button>
-        </div>
-    </section>
-    <main>
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <!-- About content and image collage -->
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="chat-history">Chat History</div>
+            <div class="settings">Settings</div>
+        </aside>
+        <section class="chat-interface">
+            <div class="chat-window">
+                <div class="message ai-message">
+                    <img src="https://example.com/ai-avatar.png" alt="AI Avatar">
+                    <p>AI Message</p>
+                </div>
+                <div class="message user-message">
+                    <p>User Message</p>
+                </div>
             </div>
-        </section>
-        <section id="rooms" class="rooms">
-            <h2>Rooms & Suites</h2>
-            <div class="room-grid">
-                <!-- Room cards -->
-            </div>
-        </section>
-        <section id="amenities" class="amenities">
-            <h2>Amenities</h2>
-            <div class="amenities-grid">
-                <!-- Amenities icons -->
-            </div>
-        </section>
-        <section id="gallery" class="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-masonry">
-                <!-- Gallery images -->
-            </div>
-        </section>
-        <section id="reviews" class="reviews">
-            <h2>Guest Reviews</h2>
-            <div class="reviews-carousel">
-                <!-- Testimonials -->
+            <div class="input-field">
+                <input type="text" placeholder="Type a message...">
+                <button class="send-button">Send</button>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="contact-info">
-                <!-- Contact information -->
-            </div>
-            <div class="social-media">
-                <!-- Social media links -->
-            </div>
-            <div class="newsletter">
-                <!-- Newsletter signup form -->
-            </div>
-        </div>
-    </footer>
+    <button class="floating-action-button">+</button>
+    <script src="script.js"></script>
 </body>
 </html>
