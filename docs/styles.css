@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav a:hover {
+    color: #d4af37;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+}
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(26, 26, 26, 0.5);
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+.book-now {
+    background-color: #d4af37;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.book-now:hover {
+    background-color: #b38e2e;
+}
+main {
+    padding: 100px 20px 20px;
+}
+.about, .rooms, .amenities, .gallery, .reviews {
+    margin-bottom: 50px;
+}
+.footer {
+    background: linear-gradient(to top, #333, #1a1a1a);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content div {
+    flex: 1;
+    padding: 10px;
+}
