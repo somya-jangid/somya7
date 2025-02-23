@@ -1,73 +1,120 @@
 body {
-    margin: 0;
+    background-color: #0A192F;
+    background-image: url('https://example.com/subtle-pattern.png');
+    color: #FFFFFF;
     font-family: 'Arial', sans-serif;
-    color: #fff;
-    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
 }
-.nav ul {
+.navigation ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-.nav a {
-    color: #fff;
+.navigation a {
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
 }
-.nav a:hover {
-    color: #d4af37;
+.navigation a:hover {
+    color: #64FFDA;
 }
-.hero {
-    position: relative;
-    height: 100vh;
-    background: url('hero-image.jpg') no-repeat center center/cover;
-}
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(26, 26, 26, 0.5);
-    padding: 20px;
-    backdrop-filter: blur(5px);
-}
-.book-now {
-    background-color: #d4af37;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.book-now:hover {
-    background-color: #b38e2e;
-}
-main {
-    padding: 100px 20px 20px;
-}
-.about, .rooms, .amenities, .gallery, .reviews {
-    margin-bottom: 50px;
-}
-.footer {
-    background: linear-gradient(to top, #333, #1a1a1a);
-    padding: 20px;
+.user-profile {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.footer-content div {
-    flex: 1;
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-content {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+.chat-interface {
+    flex-grow: 1;
+    padding: 20px;
+}
+.chat-window {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ai-message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.user-message {
+    justify-content: flex-end;
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
     padding: 10px;
+}
+.input-field input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.send-button {
+    background: #64FFDA;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.send-button:hover {
+    background: #52D1B3;
+}
+.floating-action-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #64FFDA;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.floating-action-button:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
